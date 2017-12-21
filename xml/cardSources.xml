@@ -1,0 +1,663 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+	<!--Factions-->
+	<unitType>
+		<id>1</id>
+		<name>Imperial</name>
+	</unitType>
+	<unitType>
+		<id>2</id>
+		<name>Raider</name>
+	</unitType>
+	<unitType>
+		<id>3</id>
+		<name>Bloodthirsty</name>
+	</unitType>
+	<unitType>
+		<id>4</id>
+		<name>Xeno</name>
+	</unitType>
+	<unitType>
+		<id>5</id>
+		<name>Righteous</name>
+	</unitType>
+	<unitType>
+		<id>6</id>
+		<name>Progenitor</name>
+	</unitType>
+	<!-- Rarities -->
+	<unitRarity>
+		<id>1</id>
+		<name>Common</name>
+	</unitRarity>
+	<unitRarity>
+		<id>2</id>
+		<name>Rare</name>
+	</unitRarity>
+	<unitRarity>
+		<id>3</id>
+		<name>Epic</name>
+	</unitRarity>
+	<unitRarity>
+		<id>4</id>
+		<name>Legendary</name>
+	</unitRarity>
+	<unitRarity>
+		<id>5</id>
+		<name>Vindicator</name>
+	</unitRarity>
+	<unitRarity>
+		<id>6</id>
+		<name>Mythic</name>
+	</unitRarity>
+	<!-- Skills -->
+	<skillType>
+		<id>wall</id>
+		<name>Wall</name>
+		<attributes x="0" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="0" y="0" width="16" height="16"/>
+		<order>3000</order>
+	</skillType>
+	<skillType>
+		<id>armor</id><!-- Curse you… -->
+		<id>armored</id>
+		<name>Armor</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="16" y="0" width="16" height="16"/>
+		<order>4000</order>
+	</skillType>
+	<skillType>
+		<id>counter</id>
+		<name>Counter</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="32" y="0" width="16" height="16"/>
+		<order>6000</order>
+	</skillType>
+	<skillType>
+		<id>heal</id>
+		<name>Heal</name>
+		<attributes x="1" y="1" all="1" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="48" y="0" width="16" height="16"/>
+		<order>105000</order>
+	</skillType>
+	<skillType>
+		<id>rally</id>
+		<name>Rally</name>
+		<attributes x="1" y="1" all="1" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="64" y="0" width="16" height="16"/>
+		<order>107000</order>
+	</skillType>
+	<skillType>
+		<id>strike</id>
+		<name>Strike</name>
+		<attributes x="1" y="0" all="1" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="80" y="0" width="16" height="16"/>
+		<order>109000</order>
+	</skillType>
+	<skillType>
+		<id>weaken</id>
+		<name>Weaken</name>
+		<attributes x="1" y="0" all="1" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="96" y="0" width="16" height="16"/>
+		<order>111000</order>
+	</skillType>
+	<skillType>
+		<id>siege</id>
+		<name>Siege</name>
+		<attributes x="1" y="0" all="1" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="112" y="0" width="16" height="16"/>
+		<order>112000</order>
+	</skillType>
+	<skillType>
+		<id>pierce</id>
+		<name>Pierce</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="0" y="16" width="16" height="16"/>
+		<order>152000</order>
+	</skillType>
+	<skillType>
+		<id>poison</id>
+		<name>Poison</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="16" y="16" width="16" height="16"/>
+		<order>202000</order>
+	</skillType>
+	<skillType>
+		<id>leech</id>
+		<name>Leech</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="32" y="16" width="16" height="16"/>
+		<order>203000</order>
+	</skillType>
+	<skillType>
+		<id>evade</id>
+		<name>Evade</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="48" y="16" width="16" height="16"/>
+		<order>1000</order>
+		</skillType>
+	<skillType>
+		<id>berserk</id>
+		<name>Berserk</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="64" y="16" width="16" height="16"/>
+		<order>204000</order>
+	</skillType>
+	<skillType>
+		<id>enfeeble</id>
+		<name>Enfeeble</name>
+		<attributes x="1" y="0" all="1" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="80" y="16" width="16" height="16"/>
+		<order>108000</order>
+	</skillType>
+	<skillType>
+		<id>protect</id>
+		<name>Protect</name>
+		<attributes x="1" y="1" all="1" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="96" y="16" width="16" height="16"/>
+		<order>106000</order>
+	</skillType>
+	<skillType>
+		<id>enhance</id>
+		<name>Enhance</name>
+		<attributes x="1" y="0" all="1" c="0" s="1" s2="0" n="1"/>
+		<source id="skills0" x="112" y="16" width="16" height="16"/>
+		<order>101000</order>
+	</skillType>
+	<skillType>
+		<id>jam</id>
+		<name>Jam</name>
+		<attributes x="0" y="0" all="1" c="1" s="0" s2="0" n="1"/>
+		<source id="skills0" x="0" y="32" width="16" height="16"/>
+		<order>110000</order>
+	</skillType>
+	<skillType>
+		<id>corrosive</id>
+		<name>Corrosive</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="16" y="32" width="16" height="16"/>
+		<order>7000</order>
+	</skillType>
+	<skillType>
+		<id>inhibit</id>
+		<name>Inhibit</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="32" y="32" width="16" height="16"/>
+		<order>201000</order>
+	</skillType>
+	<skillType>
+		<id>flurry</id>
+		<name>Flurry</name>
+		<attributes x="0" y="0" all="0" c="1" s="0" s2="0" n="0"/>
+		<source id="skills0" x="48" y="32" width="16" height="16"/>
+		<order>251000</order>
+	</skillType>
+	<skillType>
+		<id>valor</id>
+		<name>Valor</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="64" y="32" width="16" height="16"/>
+		<order>51000</order>
+	</skillType>
+	<skillType>
+		<id>overload</id>
+		<name>Overload</name>
+		<attributes x="0" y="1" all="1" c="0" s="0" s2="0" n="1"/>
+		<source id="skills0" x="80" y="32" width="16" height="16"/>
+		<order>103000</order>
+	</skillType>
+	<skillType>
+		<id>legion</id>
+		<name>Legion</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="96" y="32" width="16" height="16"/>
+		<order>151000</order>
+	</skillType>
+	<skillType>
+		<id>payback</id>
+		<name>Payback</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="112" y="32" width="16" height="16"/>
+		<order>2000</order>
+	</skillType>
+	<skillType>
+		<id>avenge</id>
+		<name>Avenge</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="0" y="48" width="16" height="16"/>
+		<order>5000</order>
+	</skillType>
+	<skillType>
+		<id>refresh</id>
+		<name>Refresh</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="16" y="48" width="16" height="16"/>
+		<order>203001</order>
+	</skillType>
+	<skillType>
+		<id>evolve</id>
+		<name>Evolve</name>
+		<attributes x="0" y="0" all="1" c="0" s="1" s2="1" n="1"/>
+		<source id="skills0" x="32" y="48" width="16" height="16"/>
+		<order>102000</order>
+	</skillType>
+	<skillType>
+		<id>venom</id>
+		<name>Venom</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="48" y="48" width="16" height="16"/>
+		<order>202001</order>
+	</skillType>
+	<skillType>
+		<id>mend</id>
+		<name>Mend</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="64" y="48" width="16" height="16"/>
+		<order>104000</order>
+	</skillType>
+	<skillType>
+		<id>besiege</id>
+		<id>mortar</id><!-- Curse you… -->
+		<name>Mortar</name>
+		<attributes x="1" y="0" all="1" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="80" y="48" width="16" height="16"/>
+		<order>112001</order>
+	</skillType>
+	<skillType>
+		<id>swipe</id>
+		<name>Swipe</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="96" y="48" width="16" height="16"/>
+		<order>153000</order>
+	</skillType>
+	<skillType>
+		<id>rupture</id>
+		<name>Rupture</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="112" y="48" width="16" height="16"/>
+		<order>152001</order>
+	</skillType>
+	<skillType>
+		<id>rush</id>
+		<name>Rush</name>
+		<attributes x="0" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="0" y="64" width="16" height="16"/>
+		<order>103500</order>
+	</skillType>
+	<skillType>
+		<id>sunder</id>
+		<name>Sunder</name>
+		<attributes x="1" y="0" all="1" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="16" y="64" width="16" height="16"/>
+		<order>111001</order>
+	</skillType>
+	<skillType>
+		<id>enrage</id>
+		<name>Enrage</name>
+		<attributes x='1' y='1' all='1' c='0' s='0' s2='0' n='0' />
+		<source id="skills0" x="32" y="64" width="16" height="16"/>
+		<order>103500</order>
+	</skillType>
+	<skillType>
+		<id>allegiance</id>
+		<name>Allegiance</name>
+		<attributes x='1' y='0' all='0' c='0' s='0' s2='0' n='0' />
+		<source id="skills0" x="48" y="64" width="16" height="16"/>
+		<order>103500</order>
+	</skillType>
+	<skillType>
+		<id>drain</id>
+		<name>Drain</name>
+		<attributes x='0' y='0' all='0' c='0' s='0' s2='0' n='0' />
+		<source id="skills0" x="64" y="64" width="16" height="16"/>
+		<order>103500</order>
+	</skillType>
+	<skillType>
+		<id>stasis</id>
+		<name>Stasis</name>
+		<attributes x="0" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="80" y="64" width="16" height="16"/>
+		<order>103500</order>
+	</skillType>
+	<skillType>
+		<id>revenge</id>
+		<name>Revenge</name>
+		<attributes x="0" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="96" y="64" width="16" height="16"/>
+		<order>2001</order>
+	</skillType>
+	<skillType>
+		<id>mimic</id>
+		<name>Mimic</name>
+		<attributes x="1" y="0" all="0" c="1" s="0" s2="0" n="0"/>
+		<source id="skills0" x="112" y="64" width="16" height="16"/>
+		<order>113000</order>
+	</skillType>
+	<skillType>
+		<id>coalition</id>
+		<name>Coalition</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="0" y="80" width="16" height="16"/>
+		<order>152000</order>
+	</skillType>
+	<skillType>
+		<id>sabotage</id>
+		<name>Sabotage</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="16" y="80" width="16" height="16"/>
+		<order>4800</order>
+	</skillType>
+	<skillType>
+		<id>barrier</id>
+		<name>Barrier</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="32" y="80" width="16" height="16"/>
+		<order>55500</order>
+	</skillType>
+	<skillType>
+		<id>entrap</id>
+		<name>Entrap</name>
+		<attributes x="1" y="1" all="1" c="0" s="0" s2="0" n="1"/>
+		<source id="skills0" x="48" y="80" width="16" height="16"/>
+		<order>107501</order>
+	</skillType>
+	<skillType>
+		<id>subdue</id>
+		<name>Subdue</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="64" y="80" width="16" height="16"/>
+		<order>7000</order>
+	</skillType>
+	<skillType>
+		<id>tribute</id>
+		<name>Tribute</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0"/>
+		<source id="skills0" x="80" y="80" width="16" height="16"/>
+		<order>2002</order>
+	</skillType>
+	<skillType>
+		<id>summon</id>
+		<name>Summon</name>
+		<attributes x="0" y="0" all="0" c="1" s="0" s2="0" n="0" card_id="1"/>
+		<source id="skills0" x="96" y="80" width="16" height="16"/>
+		<order>51100</order>
+	</skillType>
+	<!--Card Styles-->
+	<style>
+		<name>card_imperial_common</name>
+		<type>1</type>
+		<rarity>1</rarity>
+		<source id="cardSource" x="0" y="0" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_imperial_rare</name>
+		<type>1</type>
+		<rarity>2</rarity>
+		<source id="cardSource" x="160" y="0" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_imperial_epic</name>
+		<type>1</type>
+		<rarity>3</rarity>
+		<source id="cardSource" x="320" y="0" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_imperial_legendary</name>
+		<type>1</type>
+		<rarity>4</rarity>
+		<source id="cardSource" x="480" y="0" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_imperial_vindicator</name>
+		<type>1</type>
+		<rarity>5</rarity>
+		<source id="cardSource" x="640" y="0" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_imperial_mythic</name>
+		<type>1</type>
+		<rarity>6</rarity>
+		<source id="cardSource" x="0" y="660" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_raider_common</name>
+		<type>2</type>
+		<rarity>1</rarity>
+		<source id="cardSource" x="800" y="0" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_raider_rare</name>
+		<type>2</type>
+		<rarity>2</rarity>
+		<source id="cardSource" x="960" y="0" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_raider_epic</name>
+		<type>2</type>
+		<rarity>3</rarity>
+		<source id="cardSource" x="1120" y="0" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_raider_legendary</name>
+		<type>2</type>
+		<rarity>4</rarity>
+		<source id="cardSource" x="1280" y="0" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_raider_vindicator</name>
+		<type>2</type>
+		<rarity>5</rarity>
+		<source id="cardSource" x="1440" y="0" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_raider_mythic</name>
+		<type>2</type>
+		<rarity>6</rarity>
+		<source id="cardSource" x="160" y="660" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_bloodthirsty_common</name>
+		<type>3</type>
+		<rarity>1</rarity>
+		<source id="cardSource" x="0" y="220" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_bloodthirsty_rare</name>
+		<type>3</type>
+		<rarity>2</rarity>
+		<source id="cardSource" x="160" y="220" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_bloodthirsty_epic</name>
+		<type>3</type>
+		<rarity>3</rarity>
+		<source id="cardSource" x="320" y="220" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_bloodthirsty_legendary</name>
+		<type>3</type>
+		<rarity>4</rarity>
+		<source id="cardSource" x="480" y="220" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_bloodthirsty_vindicator</name>
+		<type>3</type>
+		<rarity>5</rarity>
+		<source id="cardSource" x="640" y="220" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_bloodthirsty_mythic</name>
+		<type>3</type>
+		<rarity>6</rarity>
+		<source id="cardSource" x="320" y="660" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_xeno_common</name>
+		<type>4</type>
+		<rarity>1</rarity>
+		<source id="cardSource" x="800" y="220" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_xeno_rare</name>
+		<type>4</type>
+		<rarity>2</rarity>
+		<source id="cardSource" x="960" y="220" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_xeno_epic</name>
+		<type>4</type>
+		<rarity>3</rarity>
+		<source id="cardSource" x="1120" y="220" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_xeno_legendary</name>
+		<type>4</type>
+		<rarity>4</rarity>
+		<source id="cardSource" x="1280" y="220" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_xeno_vindicator</name>
+		<type>4</type>
+		<rarity>5</rarity>
+		<source id="cardSource" x="1440" y="220" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_xeno_mythic</name>
+		<type>4</type>
+		<rarity>6</rarity>
+		<source id="cardSource" x="480" y="660" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_righteous_common</name>
+		<type>5</type>
+		<rarity>1</rarity>
+		<source id="cardSource" x="0" y="440" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_righteous_rare</name>
+		<type>5</type>
+		<rarity>2</rarity>
+		<source id="cardSource" x="160" y="440" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_righteous_epic</name>
+		<type>5</type>
+		<rarity>3</rarity>
+		<source id="cardSource" x="320" y="440" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_righteous_legendary</name>
+		<type>5</type>
+		<rarity>4</rarity>
+		<source id="cardSource" x="480" y="440" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_righteous_vindicator</name>
+		<type>5</type>
+		<rarity>5</rarity>
+		<source id="cardSource" x="640" y="440" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_righteous_mythic</name>
+		<type>5</type>
+		<rarity>6</rarity>
+		<source id="cardSource" x="640" y="660" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_progenitor_common</name>
+		<type>6</type>
+		<rarity>1</rarity>
+		<source id="cardSource" x="800" y="440" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_progenitor_rare</name>
+		<type>6</type>
+		<rarity>2</rarity>
+		<source id="cardSource" x="960" y="440" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_progenitor_epic</name>
+		<type>6</type>
+		<rarity>3</rarity>
+		<source id="cardSource" x="1120" y="440" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_progenitor_legendary</name>
+		<type>6</type>
+		<rarity>4</rarity>
+		<source id="cardSource" x="1280" y="440" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_progenitor_vindicator</name>
+		<type>6</type>
+		<rarity>5</rarity>
+		<source id="cardSource" x="1440" y="440" width="160" height="220"/>
+	</style>
+	<style>
+		<name>card_progenitor_mythic</name>
+		<type>6</type>
+		<rarity>6</rarity>
+		<source id="cardSource" x="800" y="660" width="160" height="220"/>
+	</style>
+	<!--Card Fusion-->
+	<frame>
+		<name>fused_card_overlay2</name>
+		<fusion_level>1</fusion_level>
+		<source id="cardSource" x="1600" y="220" width="160" height="220"/>
+	</frame>
+	<frame>
+		<name>fused_card_overlay3</name>
+		<fusion_level>2</fusion_level>
+		<source id="cardSource" x="1600" y="440" width="160" height="220"/>
+	</frame>
+	<!--Icons-->
+	<icon>
+		<name>cost_container</name>
+		<source id="cardSource" x="1600" y="0" width="32" height="32"/>
+	</icon>
+	<icon>
+		<name>icon_commander_common</name>
+		<source id="cardSource" x="1600" y="32" width="24" height="24"/>
+	</icon>
+	<icon>
+		<name>icon_assault_common</name>
+		<source id="cardSource" x="1624" y="32" width="24" height="24"/>
+	</icon>
+	<icon>
+		<name>icon_structure_common</name>
+		<source id="cardSource" x="1648" y="32" width="24" height="24"/>
+	</icon>
+	<icon>
+		<name>icon_action_common</name>
+		<source id="cardSource" x="1672" y="32" width="24" height="24"/>
+	</icon>
+	<icon>
+		<name>icon_dominion_common</name>
+		<source id="cardSource" x="1696" y="32" width="24" height="24"/>
+	</icon>
+	<!--Levels-->
+	<icon>
+		<name>icon_unfused_empty</name>
+		<fused>0</fused>
+		<filled>0</filled>
+		<source id="cardSource" x="1632" y="0" width="11" height="11"/>
+	</icon>
+	<icon>
+		<name>icon_unfused_full</name>
+		<fused>0</fused>
+		<filled>1</filled>
+		<source id="cardSource" x="1632" y="11" width="11" height="11"/>
+	</icon>
+	<icon>
+		<name>icon_fused_empty</name>
+		<fused>1</fused>
+		<filled>0</filled>
+		<source id="cardSource" x="1643" y="0" width="11" height="11"/>
+	</icon>
+	<icon>
+		<name>icon_fused_full</name>
+		<fused>1</fused>
+		<filled>1</filled>
+		<source id="cardSource" x="1643" y="11" width="11" height="11"/>
+	</icon>
+</root>

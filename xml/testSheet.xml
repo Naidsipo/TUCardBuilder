@@ -1,0 +1,335 @@
+<root>
+	<!--Card Template-->
+	<unit>
+		<id>0</id>
+		<name>Orbo</name>
+		<picture>orbo.jpg</picture>
+		<asset_bundle>0</asset_bundle>
+		<attack>1</attack>
+		<health>1</health>
+		<cost>0</cost>
+		<rarity>2</rarity>
+		<skill id="evade" x="1" />
+		<skill id="weaken" x="1" />
+		<type>2</type>
+		<set>0</set>
+		<upgrade>
+			<level>2</level>
+			<card_id>0</card_id>
+			<health>3</health>
+			<skill id="evade" x="1"/>
+			<skill id="weaken" x="1" all="1" />
+		</upgrade>
+	</unit>
+	<!--Lord Orbo for Example-->
+	<unit> <!--Zorbo-->
+		<id>15008</id>
+		<name>Zorbo</name>
+		<picture>zorbo</picture>
+		<asset_bundle>124</asset_bundle>
+		<attack>3</attack>
+		<health>12</health>
+		<cost>1</cost>
+		<rarity>4</rarity>
+		<skill id="enfeeble" x="1"/>
+		<skill id="jam" c="7"/>
+		<type>3</type>
+		<set>4700</set>
+		<upgrade>
+			<level>2</level>
+			<card_id>15009</card_id>
+			<skill id="enfeeble" x="1"/>
+			<skill id="strike" x="1"/>
+			<skill id="jam" c="7"/>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<card_id>15010</card_id>
+			<health>13</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<card_id>15011</card_id>
+			<skill id="enfeeble" x="1"/>
+			<skill id="strike" x="1"/>
+			<skill id="jam" c="6"/>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<card_id>15012</card_id>
+			<health>15</health>
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<card_id>15013</card_id>
+			<skill id="enfeeble" x="1" all="1"/>
+			<skill id="strike" x="1"/>
+			<skill id="jam" c="6"/>
+			<health>16</health>
+		</upgrade>
+	</unit>
+	<unit> <!--Zorbo+-->
+		<id>15014</id>
+		<name>Zorbo the Feared</name> <!--Zorbo-->
+		<picture>zorbo_lv3</picture>
+		<asset_bundle>124</asset_bundle>
+		<fusion_level>1</fusion_level>
+		<attack>3</attack>
+		<health>16</health>
+		<cost>1</cost>
+		<rarity>4</rarity>
+		<skill id="enfeeble" x="1" all="1"/>
+		<skill id="strike" x="1"/>
+		<skill id="jam" c="5"/>
+		<type>3</type>
+		<set>2000</set>
+		<upgrade>
+			<level>2</level>
+			<card_id>15015</card_id>
+			<health>17</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<card_id>15016</card_id>
+			<skill id="enfeeble" x="1" all="1"/>
+			<skill id="strike" x="1"/>
+			<skill id="jam" c="4"/>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<card_id>15017</card_id>
+			<health>18</health>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<card_id>15018</card_id>
+			<attack>4</attack>
+			<health>19</health>
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<card_id>15019</card_id>
+			<skill id="enfeeble" x="1" all="1"/>
+			<skill id="strike" x="2"/>
+			<skill id="jam" c="4"/>
+			<health>20</health>
+		</upgrade>
+	</unit>
+	<unit> <!--Zorbo++-->
+		<id>15020</id>
+		<name>Zorbo the Master</name> <!--Zorbo the Feared-->
+		<picture>zorbo_lv6</picture>
+		<asset_bundle>124</asset_bundle>
+		<fusion_level>2</fusion_level>
+		<attack>4</attack>
+		<health>21</health>
+		<cost>1</cost>
+		<rarity>4</rarity>
+		<skill id="enfeeble" x="1" all="1"/>
+		<skill id="strike" x="2"/>
+		<skill id="jam" c="4"/>
+		<type>3</type>
+		<set>2000</set>
+		<upgrade>
+			<level>2</level>
+			<card_id>15021</card_id>
+			<health>22</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<card_id>15022</card_id>
+			<health>23</health>
+		</upgrade>
+		<upgrade>
+		<level>4</level>
+			<card_id>15023</card_id>
+			<skill id="enfeeble" x="1" all="1"/>
+			<skill id="strike" x="2"/>
+			<skill id="jam" c="3"/>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<card_id>15024</card_id>
+			<skill id="enfeeble" x="1" all="1"/>
+			<skill id="strike" x="3"/>
+			<skill id="jam" c="3"/>
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<card_id>15025</card_id>
+			<skill id="enfeeble" x="2" all="1"/>
+			<skill id="strike" x="3"/>
+			<skill id="jam" c="3"/>
+		</upgrade>
+	</unit>
+	<unit> <!--Orbo-->
+		<id>37736</id>
+		<name>Orbo Reborn</name>
+		<picture>orbothewrathfull</picture>
+		<asset_bundle>154</asset_bundle>
+		<attack>2</attack>
+		<health>7</health>
+		<cost>4</cost>
+		<rarity>5</rarity>
+		<skill id="evade" x="2"/>
+		<skill id="protect" x="1" all="1"/>
+		<skill id="strike" x="3"/>
+		<type>5</type>
+		<set>3001</set>
+		<upgrade>
+			<card_id>37737</card_id>
+			<level>2</level>
+			<picture>orbothewrathful_lv3</picture>
+			<cost>3</cost>
+			<attack>7</attack>
+			<health>31</health>
+			<skill id="evade" x="2"/>
+			<skill id="protect" x="2" all="1"/>
+			<skill id="strike" x="3" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>37738</card_id>
+			<level>3</level>
+			<health>33</health>
+			<skill id="evade" x="2"/>
+			<skill id="protect" x="3" all="1"/>
+			<skill id="strike" x="3" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>37739</card_id>
+			<level>4</level>
+			<health>34</health>
+			<skill id="evade" x="3"/>
+			<skill id="protect" x="3" all="1"/>
+			<skill id="strike" x="3" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>37740</card_id>
+			<level>5</level>
+			<health>36</health>
+			<skill id="evade" x="3"/>
+			<skill id="protect" x="4" all="1"/>
+			<skill id="strike" x="3" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>37741</card_id>
+			<level>6</level>
+			<health>37</health>
+			<skill id="evade" x="3"/>
+			<skill id="protect" x="4" all="1"/>
+			<skill id="strike" x="4" all="1"/>
+		</upgrade>
+	</unit>
+	<unit> <!--Orbo+-->
+		<id>37742</id>
+		<name>Orbo Infuriated</name>
+		<!--  Orbo Reborn  -->
+		<picture>orbothewrathful_lv3</picture>
+		<asset_bundle>154</asset_bundle>
+		<fusion_level>1</fusion_level>
+		<attack>7</attack>
+		<health>39</health>
+		<cost>3</cost>
+		<rarity>5</rarity>
+		<skill id="evade" x="3"/>
+		<skill id="protect" x="4" all="1"/>
+		<skill id="strike" x="4" all="1"/>
+		<type>5</type>
+		<set>2000</set>
+		<upgrade>
+			<card_id>37743</card_id>
+			<level>2</level>
+			<health>40</health>
+			<skill id="evade" x="4"/>
+			<skill id="protect" x="4" all="1"/>
+			<skill id="strike" x="4" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>37744</card_id>
+			<level>3</level>
+			<health>42</health>
+			<skill id="evade" x="4"/>
+			<skill id="protect" x="5" all="1"/>
+			<skill id="strike" x="4" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>37745</card_id>
+			<level>4</level>
+			<health>43</health>
+			<skill id="evade" x="4"/>
+			<skill id="protect" x="5" all="1"/>
+			<skill id="strike" x="5" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>37746</card_id>
+			<level>5</level>
+			<health>45</health>
+			<skill id="evade" x="4"/>
+			<skill id="protect" x="6" all="1"/>
+			<skill id="strike" x="5" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>37747</card_id>
+			<level>6</level>
+			<health>46</health>
+			<skill id="evade" x="4"/>
+			<skill id="protect" x="6" all="1"/>
+			<skill id="strike" x="6" all="1"/>
+		</upgrade>
+	</unit>
+	<unit> <!--Orbo++-->
+		<id>37748</id>
+		<name>Orbo the Wrathful</name>
+		<!--  Orbo Infuriated  -->
+		<picture>orbothewrathfull</picture>
+		<asset_bundle>154</asset_bundle>
+		<fusion_level>2</fusion_level>
+		<attack>7</attack>
+		<health>48</health>
+		<cost>3</cost>
+		<rarity>5</rarity>
+		<skill id="evade" x="5"/>
+		<skill id="protect" x="6" all="1"/>
+		<skill id="strike" x="6" all="1"/>
+		<type>5</type>
+		<set>2000</set>
+		<upgrade>
+			<card_id>37749</card_id>
+			<level>2</level>
+			<health>49</health>
+			<skill id="evade" x="5"/>
+			<skill id="protect" x="7" all="1"/>
+			<skill id="strike" x="6" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>37750</card_id>
+			<level>3</level>
+			<health>51</health>
+			<skill id="evade" x="5"/>
+			<skill id="protect" x="7" all="1"/>
+			<skill id="strike" x="7" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>37751</card_id>
+			<level>4</level>
+			<health>52</health>
+			<attack>8</attack>
+		</upgrade>
+		<upgrade>
+			<card_id>37752</card_id>
+			<level>5</level>
+			<health>54</health>
+			<skill id="evade" x="6"/>
+			<skill id="protect" x="7" all="1"/>
+			<skill id="strike" x="7" all="1"/>
+		</upgrade>
+		<upgrade>
+			<card_id>37753</card_id>
+			<level>6</level>
+			<health>56</health>
+			<skill id="evade" x="6"/>
+			<skill id="protect" x="8" all="1"/>
+			<skill id="strike" x="8" all="1"/>
+		</upgrade>
+	</unit>
+</root>
