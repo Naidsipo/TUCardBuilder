@@ -382,6 +382,20 @@
 		<source id="skills0" x="96" y="80" width="16" height="16"/>
 		<order>51100</order>
 	</skillType>
+	<skillType>
+		<id>bravery</id>
+		<name>Bravery</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0" card_id="0"/>
+		<source id="skills0" x="112" y="80" width="16" height="16"/>
+		<order>51110</order>
+	</skillType>
+	<skillType>
+		<id>absorb</id>
+		<name>Absorb</name>
+		<attributes x="1" y="0" all="0" c="0" s="0" s2="0" n="0" card_id="0"/>
+		<source id="skills0" x="0" y="96" width="16" height="16"/>
+		<order>51111</order>
+	</skillType>
 	<!--Card Styles-->
 	<style>
 		<name>card_imperial_common</name>
