@@ -1,0 +1,34 @@
+@font-face {
+	font-family: 'Optimus';
+	src: url('fonts/optimus.eot');
+	src: local(Optimus),
+		 url('fonts/optimus.woff') format('woff'),
+		 url('fonts/optimus.ttf') format('truetype'),
+		 url('fonts/optimus.svg#optimusregular') format('svg');
+}
+#main {
+	width: 100%;
+}
+.cardImage {
+	display: inline-block;
+	background-color: black;
+	width: 256px;
+	margin: 1px;
+	padding: 1px;
+}
+input {display:inline-block;}
+.card160 {width:160px;height:220px;}
+#smallCard {width:80px;height:110px;}
+#CBXSI {
+	width: 100%;
+	height: 256px;
+	font-size: 9pt;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+#sources {
+	display: none;
+}
+pre {
+	background-color: gray;
+}
