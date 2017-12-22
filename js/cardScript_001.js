@@ -1,4 +1,4 @@
-var CARDSOURCES, TESTCARDS;
+var CARDSOURCES, TESTCARDS, DEFAULT150;
 
 $(document).ready(function() {
 	$.get("xml/cardSources.xml", function(data) {
@@ -10,6 +10,7 @@ $(document).ready(function() {
 		testBuilder = new XMLCardBuilder;
 		//works fine now.
 	}, "xml");
+	DEFAULT150 = $("#default150")[0];
 	//test end
 });
 
@@ -487,7 +488,7 @@ class XMLBuilderBox {
 				};
 			};
 		} else {
-			this.ctx.drawImage($("#default150")[0], 0, 0, 150, 125, 5, 20, 150, 125);
+			this.ctx.drawImage(DEFAULT150, 0, 0, 150, 125, 5, 20, 150, 125);
 			parantBuilder.drawUnit(this.ctx, card);
 			this.image_160[0].src = this.canvas[0].toDataURL();
 		}
