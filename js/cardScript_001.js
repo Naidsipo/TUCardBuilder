@@ -4,13 +4,13 @@ $(document).ready(function() {
 	$.get("xml/cardSources.xml", function(data) {
 		CARDSOURCES = data;
 	}, "xml");
+	DEFAULT150 = $("#default150")[0];
 	//test start
 	$.get("xml/testSheet.xml", function(data) {
 		TESTCARDS = data;
 		testBuilder = new XMLCardBuilder;
 		//works fine now.
 	}, "xml");
-	DEFAULT150 = $("#default150")[0];
 	//test end
 });
 
