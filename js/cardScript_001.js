@@ -296,14 +296,12 @@ class XMLCardBuilder {
 			var path = "/root/unit[id]";
 			var nodes = pathFinderPlus(_this.sheet, path, 0);
 			var cur = nodes.iterateNext();
-			var i = 0;
 			while(cur) {
 				_this.units.push(new XMLUnit(_this.sheet, cur));
-				if(!(i > _this.containers.legnth)) {
+				if(_this.units.length > _this.containers.length) {
 					_this.containers.push(new XMLBuilderBox);
 				}
 				cur = nodes.iterateNext();
-				++i;
 			}
 		});
 		//Print card with a button dedicated for it.
