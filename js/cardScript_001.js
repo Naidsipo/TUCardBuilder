@@ -297,13 +297,21 @@ class XMLCardBuilder {
 			var path = "/root/unit[id]";
 			var nodes = pathFinderPlus(_this.sheet, path, 0);
 			var cur = nodes.iterateNext();
+			var i = 0;
+			for(i = 0;i < _this.containers.length; ++i) {
+				_this.containers[i].hide();
+			}
+			i = 0;
 			while(cur) {
 				_this.units.push(new XMLUnit(_this.sheet, cur));
 				if(_this.units.length > _this.containers.length) {
 					_this.containers.push(new XMLBuilderBox);
 				}
+				_this.containers[i].show();
 				cur = nodes.iterateNext();
+				++i;
 			}
+			
 		});
 		//Print card with a button dedicated for it.
 		$("div#CBI").append("<input id='CBXCP' type='button' value='Draw from XML' />");
@@ -461,6 +469,7 @@ class XMLBuilderBox {
 	constructor() {
 		//Basic container
 		this.container = $("<div class='cardImage'></div>");
+		this.hide();
 		$("div#CBO").append(this.container);
 		//Actual image
 		this.image_160 = $("<img src='' alt='Doge' class='card160' />");
@@ -496,4 +505,6 @@ class XMLBuilderBox {
 			this.image_160[0].src = this.canvas[0].toDataURL();
 		}
 	}
+	show() {this.container.show();}
+	hide() {this.container.hide();}
 }
