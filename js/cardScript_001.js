@@ -314,50 +314,52 @@ class XMLCardBuilder {
 		});
 	}
 	drawUnit(ctx, xCard) {
-		var path;
-		ctx.font = "16pt Optimus";
-		ctx.fillStyle = "white";
-		
-		path = "/root/style[type=" + xCard.type + " and rarity=" + xCard.rarity + "]/source[1]";
-		this.drawFromSources(ctx, path, 0, 0, 160, 220);
-		
-		if (xCard.fusion_level) {
-			path = "/root/frame[fusion_level='" + xCard.fusion_level + "']/source[1]"
+		if(xCard) {
+			var path;
+			ctx.font = "16pt Optimus";
+			ctx.fillStyle = "white";
+
+			path = "/root/style[type=" + xCard.type + " and rarity=" + xCard.rarity + "]/source[1]";
 			this.drawFromSources(ctx, path, 0, 0, 160, 220);
-		}
-		
-		this.drawLevel(xCard, ctx);
-		
-		path = "/root/icon[name='icon_" + Card.unitType(xCard.card_id).toLowerCase() + "_common']/source[1]"
-		this.drawFromSources(ctx, path, 2, 2, 24, 24);
-		
-		if (xCard.cost) {
-			path = "/root/icon[name='cost_container']/source[1]"
-			this.drawFromSources(ctx, path, 120, 26, 32, 32);
-			ctx.textAlign = "center";
-			ctx.fillText(xCard.cost, 136, 49);
-		}
-		
-		ctx.font="14pt Optimus";
-		
-		if (Card.unitType(xCard.card_id) == "Assault") {
-			if (xCard.attack == undefined) {
-				xCard.attack = 0;
+
+			if (xCard.fusion_level) {
+				path = "/root/frame[fusion_level='" + xCard.fusion_level + "']/source[1]"
+				this.drawFromSources(ctx, path, 0, 0, 160, 220);
 			}
-			ctx.textAlign = "left";
-			ctx.fillText(xCard.attack, 24, 215);
-		} 
-		
-		if (xCard.health != undefined) {
-			ctx.textAlign = "right";
-			ctx.fillText(xCard.health, 136, 215);
+
+			this.drawLevel(xCard, ctx);
+
+			path = "/root/icon[name='icon_" + Card.unitType(xCard.card_id).toLowerCase() + "_common']/source[1]"
+			this.drawFromSources(ctx, path, 2, 2, 24, 24);
+
+			if (xCard.cost) {
+				path = "/root/icon[name='cost_container']/source[1]"
+				this.drawFromSources(ctx, path, 120, 26, 32, 32);
+				ctx.textAlign = "center";
+				ctx.fillText(xCard.cost, 136, 49);
+			}
+
+			ctx.font="14pt Optimus";
+
+			if (Card.unitType(xCard.card_id) == "Assault") {
+				if (xCard.attack == undefined) {
+					xCard.attack = 0;
+				}
+				ctx.textAlign = "left";
+				ctx.fillText(xCard.attack, 24, 215);
+			} 
+
+			if (xCard.health != undefined) {
+				ctx.textAlign = "right";
+				ctx.fillText(xCard.health, 136, 215);
+			}
+
+			ctx.font = "bold 8pt Arial"
+			ctx.textAlign = "left"
+			this.drawArialText(ctx, xCard.name, 35, 18, 120);
+			this.drawArialText(ctx, Card.facStr(xCard.type), 10, 140, 140);
+			this.drawSkill(ctx, xCard);
 		}
-		
-		ctx.font = "bold 8pt Arial"
-		ctx.textAlign = "left"
-		this.drawArialText(ctx, xCard.name, 35, 18, 120);
-		this.drawArialText(ctx, Card.facStr(xCard.type), 10, 140, 140);
-		this.drawSkill(ctx, xCard);
 	}
 	drawFromSources(ctx, path, dx, dy, dw, dh) {
 		var obj, i, img, x, y;
