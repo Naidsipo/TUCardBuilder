@@ -299,7 +299,7 @@ class XMLCardBuilder {
 			var i = 0;
 			while(cur) {
 				_this.units.push(new XMLUnit(_this.sheet, cur));
-				if(i < _this.containers.legnth) {
+				if(i <= _this.containers.legnth) {
 					_this.containers.push(new XMLBuilderBox);
 				}
 				cur = nodes.iterateNext();
