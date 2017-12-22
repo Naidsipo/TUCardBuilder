@@ -361,7 +361,8 @@ class XMLCardBuilder {
 	}
 	drawFromSources(ctx, path, dx, dy, dw, dh) {
 		var obj, i, img, x, y;
-		test(path);
+		//use this for maulal debugging with console.
+		//test(path);
 		x = pathFinderPlus(CARDSOURCES, path).iterateNext();
 		obj = {};
 		for (i = 0; i < x.attributes.length; i++) {
