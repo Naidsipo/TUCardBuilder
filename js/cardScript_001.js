@@ -282,6 +282,8 @@ class XMLCardBuilder {
 		//maybe a button is better? Not sure.
 		//$("div#CBI").append("<input id='CBXRB' type='button' value='Read XML' />");
 		$("#CBI #CBXSI")[0].addEventListener("focusout", function() {
+			_this.units = [];
+			_this.containers = [];
 			//replace with $("#CBXSI").val() just in case using buttons.
 			var data = this.value;
 			if (data.search("<root>") == -1) {
@@ -295,10 +297,14 @@ class XMLCardBuilder {
 			var path = "/root/unit[id]";
 			var nodes = pathFinderPlus(_this.sheet, path, 0);
 			var cur = nodes.iterateNext();
+			var i = 0;
 			while(cur) {
 				_this.units.push(new XMLUnit(_this.sheet, cur));
-				_this.containers.push(new XMLBuilderBox);
+				if(i < containers.legnth) {
+					_this.containers.push(new XMLBuilderBox);
+				}
 				cur = nodes.iterateNext();
+				++i;
 			}
 		});
 		//Print card with a button dedicated for it.
@@ -469,7 +475,12 @@ class XMLBuilderBox {
 	}
 	draw(parantBuilder, card) {
 		var _this = this;
-		var file = this.fInput[0].files[0];
+		var file;
+		if (fileArray.length > 0) {
+			file = this.fInput[0].files[0];
+		} else {
+			file = new File([], "resources\cogs.png");
+		}
 		var reader = new FileReader();
 		reader.readAsDataURL(file);
 		reader.onload = function() {

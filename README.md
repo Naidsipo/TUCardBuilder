@@ -1,2 +1,2 @@
 # TUpseudoCardBuilder
-Some sort of Alpha version of Card image maker for the game Tyrant Unleashed.
+Some sort of Pre-Alpha version of Card image maker for the game Tyrant Unleashed.
