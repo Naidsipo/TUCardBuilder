@@ -283,7 +283,6 @@ class XMLCardBuilder {
 		//$("div#CBI").append("<input id='CBXRB' type='button' value='Read XML' />");
 		$("#CBI #CBXSI")[0].addEventListener("focusout", function() {
 			_this.units = [];
-			_this.containers = [];
 			//replace with $("#CBXSI").val() just in case using buttons.
 			var data = this.value;
 			if (data.search("<root>") == -1) {
