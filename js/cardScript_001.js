@@ -1,4 +1,4 @@
-﻿var CARDSOURCES, TESTCARDS;
+var CARDSOURCES, TESTCARDS;
 
 $(document).ready(function() {
 	$.get("xml/cardSources.xml", function(data) {
@@ -475,21 +475,23 @@ class XMLBuilderBox {
 	draw(parantBuilder, card) {
 		var _this = this;
 		var file;
-		if (fileArray.length > 0) {
+		if (this.fInput[0].length > 0) {
 			file = this.fInput[0].files[0];
-		} else {
-			file = new File([], "resources\cogs.png");
-		}
-		var reader = new FileReader();
-		reader.readAsDataURL(file);
-		reader.onload = function() {
-			var temp = new Image();
-			temp.src = reader.result;
-			temp.onload = function() {
-				_this.ctx.drawImage(this, 0, 0, 150, 125, 5, 20, 150, 125);
-				parantBuilder.drawUnit(_this.ctx, card);
-				_this.image_160[0].src = _this.canvas[0].toDataURL();
+			var reader = new FileReader();
+			reader.readAsDataURL(file);
+			reader.onload = function() {
+				var temp = new Image();
+				temp.src = reader.result;
+				temp.onload = function() {
+					_this.ctx.drawImage(this, 0, 0, 150, 125, 5, 20, 150, 125);
+					parantBuilder.drawUnit(_this.ctx, card);
+					_this.image_160[0].src = _this.canvas[0].toDataURL();
+				};
 			};
-		};
+		} else {
+			this.ctx.drawImage($("#default150")[0], 0, 0, 150, 125, 5, 20, 150, 125);
+			parantBuilder.drawUnit(this.ctx, card);
+			this.image_160[0].src = this.canvas[0].toDataURL();
+		}
 	}
 }
