@@ -12,7 +12,7 @@
 .cardImage {
 	display: inline-block;
 	background-color: black;
-	width: 256px;
+	width: 192px;
 	margin: 1px;
 	padding: 1px;
 }
@@ -21,7 +21,7 @@ input {display:inline-block;}
 #smallCard {width:80px;height:110px;}
 #CBXSI {
 	width: 100%;
-	height: 256px;
+	height: 192px;
 	font-size: 9pt;
 	overflow-x: hidden;
 	overflow-y: scroll;
