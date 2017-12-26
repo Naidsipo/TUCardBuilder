@@ -480,7 +480,7 @@ class XMLBuilderBox {
 		this.ctx.clearRect(0, 0, this.canvas.attr("width"), this.canvas.attr("height"));
 		var reader, file;
 		//Picture
-		this.fInput = $("<input type='file' class='imageFile' accept='image/*' />");
+		this.fInput = $("<input type='file' class='imageFile' accept='image/*' value='Upload a Picture' />");
 		this.container.append(this.fInput);
 	}
 	draw(parantBuilder, card) {
