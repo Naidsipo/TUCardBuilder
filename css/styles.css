@@ -6,29 +6,16 @@
 		 url('fonts/optimus.ttf') format('truetype'),
 		 url('fonts/optimus.svg#optimusregular') format('svg');
 }
-#main {
-	width: 100%;
-}
-.cardImage {
-	display: inline-block;
-	background-color: black;
-	width: 192px;
-	margin: 1px;
-	padding: 1px;
-}
-input {display:inline-block;}
-.card160 {width:160px;height:220px;}
-#smallCard {width:80px;height:110px;}
-#CBXSI {
-	width: 100%;
-	height: 192px;
-	font-size: 9pt;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
 #sources {
 	display: none;
 }
-pre {
-	background-color: gray;
+* {
+	padding: 2px;
+	border: 1px solid black;
+}
+h3, h4, label {
+	text-align: center;
+}
+input[type=radio], input[type=file] {
+	display: none;
 }
