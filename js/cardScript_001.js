@@ -6,11 +6,7 @@ $(document).ready(function() {
 	}, "xml");
 	DEFAULT150 = $("#default150")[0];
 	//test start
-	$.get("/TUCardBuilder/xml/testSheet.xml", function(data) {
-		TESTCARDS = data;
-		testBuilder = new XMLCardBuilder;
-		//works fine now.
-	}, "xml");
+	testBuilder = new XMLCardBuilder;
 	//test end
 });
 
