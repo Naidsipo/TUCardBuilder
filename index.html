@@ -12,10 +12,230 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"
 			integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9" crossorigin="anonymous"></script>
 		<!-- For the Builder -->
-		<link rel="stylesheet" type="text/css" href="css\stylesAlt.css">
-		<script src="js\cardScript_001.js"></script>
+		<link rel="stylesheet" type="text/css" href="css\styles.css">
+		<script src="js\script000.js"></script>
+		<script src="js\script001.js"></script>
+		<script src="js\script002.js"></script>
 	</head>
 	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6" id="outputs">
+					<div class="row">
+						<div class="mx-auto">
+							<image src="" alt="" id="card160" width="160" height="220"/>
+							<image src="" alt="" id="card80" width="80" height="110"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="btn-group mx-auto">
+							<button type="button" class="btn btn-primary" id="cardSave160">Save Card Image</button>
+							<button type="button" class="btn btn-secondary" id="cardSave80">(Small)</button>
+						</div>
+					</div>
+				</div>
+				<form name="inputs" class="col-12 col-md-6" id="inputs">
+					<!-- Card ID -->
+					<div class="row">
+						<h3 class="col-12">Card Type:</h3>
+						<label for="cardIDAssault" class="col-6 col-sm-12 col-md-3">
+							<input type="radio" name="cardID" id="cardIDAssault" value="1" checked />
+							Assault
+						</label>
+						<label for="cardIDCommander" class="col-6 col-sm-4 col-md-3">
+							<input type="radio" name="cardID" id="cardIDCommander" value="1000" />
+							Commander
+						</label>
+						<label for="cardIDStructure" class="col-6 col-sm-4 col-md-3">
+							<input type="radio" name="cardID" id="cardIDStructure" value="2000" />
+							Structure
+						</label>
+						<label for="cardIDDominion" class="col-6 col-sm-4 col-md-3">
+							<input type="radio" name="cardID" id="cardIDDominion" value="50000" />
+							Dominion
+						</label>
+					</div>
+					<!-- Card Frame-->
+					<div class="row">
+						<!-- Standard -->
+						<div class="col-12">
+							<!-- Card Type -->
+							<div class="row">
+								<h3 class="col-12">Card Faction:</h3>
+								<label for="cardType1" class="col-6 col-sm-4 col-md-2">
+									<input type="radio" name="type" id="cardType1" value="1" checked />
+									Imperial
+								</label>
+								<label for="cardType2" class="col-6 col-sm-4 col-md-2">
+									<input type="radio" name="type" id="cardType2" value="2" />
+									Raider
+								</label>
+								<label for="cardType3" class="col-6 col-sm-4 col-md-2">
+									<input type="radio" name="type" id="cardType3" value="3" />
+									Bloodthirsty
+								</label>
+								<label for="cardType4" class="col-6 col-sm-4 col-md-2">
+									<input type="radio" name="type" id="cardType4" value="4" />
+									Xeno
+								</label>
+								<label for="cardType5" class="col-6 col-sm-4 col-md-2">
+									<input type="radio" name="type" id="cardType5" value="5" />
+									Righteous
+								</label>
+								<label for="cardType6" class="col-6 col-sm-4 col-md-2">
+									<input type="radio" name="type" id="cardType6" value="6" />
+									Progenitor
+								</label>
+							</div>
+							<!-- Card Rarity -->
+							<div class="row">
+								<h3 class="col-12">Card Rarity:</h3>
+								<label for="cardRarity1" class="col-6 col-sm-4 col-md-2">
+									<input type="radio" name="rarity" id="cardRarity1" value="1" checked />
+									Common
+								</label>
+								<label for="cardRarity2" class="col-6 col-sm-4 col-md-2">
+									<input type="radio" name="rarity" id="cardRarity2" value="2" />
+									Rare
+								</label>
+								<label for="cardRarity3" class="col-6 col-sm-4 col-md-2">
+									<input type="radio" name="rarity" id="cardRarity3" value="3" />
+									Epic
+								</label>
+								<label for="cardRarity4" class="col-6 col-sm-4 col-md-2">
+									<input type="radio" name="rarity" id="cardRarity4" value="4" />
+									Legendary
+								</label>
+								<label for="cardRarity5" class="col-6 col-sm-4 col-md-2">
+									<input type="radio" name="rarity" id="cardRarity5" value="5" />
+									Vindicator
+								</label>
+								<label for="cardRarity6" class="col-6 col-sm-4 col-md-2">
+									<input type="radio" name="rarity" id="cardRarity6" value="6" />
+									Mythic
+								</label>
+							</div>
+						</div>
+						<!-- Custom -->
+						<button type="button" class="col-12 btn btn-secondary" id="cardFrameCBtn">Upload a custom frame</button>
+						<input type="file" accept='image/*' name="cardFrameC" id="cardFrameC" />
+					</div>
+					<!-- Card Name -->
+					<div class="row">
+						<h3 class="col-12">Card Name:</h3>
+						<input type="text" class="form-control" name="name" id="name" />
+					</div>
+					<!-- Card Picture -->
+					<div class="row">
+						<h3 class="col-12">Card Picture:</h3>
+						<button type="button" class="col-12 btn btn-primary" id="pictureBtn">Upload a Picture</button>
+						<input type="file" accept='image/*' name="picture" id="picture" />
+					</div>
+					<!-- Card Fusion -->
+					<div class="row">
+						<h3 class="col-12">Card Fusion Level:</h3>
+						<label for="cardFusion0" class="col-4">
+							<input type="radio" name="fusion_level" id="cardFusion0" value="0" checked />
+							None
+						</label>
+						<label for="" class="col-4">
+							<input type="radio" name="fusion_level" id="cardFusion1" value="1" />
+							Level 1
+						</label>
+						<label for="" class="col-4">
+							<input type="radio" name="fusion_level" id="cardFusion2" value="2" />
+							Level 2
+						</label>
+					</div>
+					<!-- Card Attack -->
+					<div class="row">
+						<h3 class="col-12">Card Attack:</h3>
+						<input type="number" min="0" class="form-control" name="attack" id="attack" value="0" />
+					</div>
+					<!-- Card Health -->
+					<div class="row">
+						<h3 class="col-12">Card Health:</h3>
+						<input type="number" min="1" class="form-control" name="health" id="health" value="1" />
+					</div>
+					<!-- Card Cost -->
+					<div class="row">
+						<h3 class="col-12">Card Delay:</h3>
+						<input type="number" min="0" class="form-control" name="cost" id="cost" value="0" />
+					</div>
+					<!-- Card Typetext -->
+					<div class="row">
+						<h3 class="col-12">Card Text:</h3>
+						<input type="text" class="form-control" name="cardTText" id="cardTText" />
+					</div>
+					<!-- Card Skills -->
+					<!-- Card Skill 1-->
+					<div class="row">
+						<h3 class="col-12">Card Skill 1:</h3>
+						<div class="col-12">
+							<!-- Icons -->
+							<div class="row">
+								<h4 class="col-12">Icon:</h4>
+								<button type="button" class="col-12 btn btn-secondary sNone" data-sIdx="0">None</button>
+								<button type="button" class="col-12 btn btn-secondary sCustom" data-sIdx="0">Upload a custom Icon</button>
+								<input type="file" accept='image/*' class="sIconC" data-sIdx="0" />
+							</div>
+							<!-- Text -->
+							<div class="row">
+								<h4 class="col-12">Text:</h4>
+								<input type="text" class="form-control" />
+							</div>
+						</div>
+					</div>
+					<!-- Card Skill 2-->
+					<div class="row">
+						<h3 class="col-12">Card Skill 2:</h3>
+						<div class="col-12">
+							<!-- Icons -->
+							<div class="row">
+								<h4 class="col-12">Icon:</h4>
+								<button type="button" class="col-12 btn btn-secondary sNone" data-sIdx="1">None</button>
+								<button type="button" class="col-12 btn btn-secondary sCustom" data-sIdx="1">Upload a custom Icon</button>
+								<input type="file" accept='image/*' class="sIconC" data-sIdx="1" />
+							</div>
+							<!-- Text -->
+							<div class="row">
+								<h4 class="col-12">Text:</h4>
+								<input type="text" class="form-control" />
+							</div>
+						</div>
+					</div>
+					<!-- Card Skill 3-->
+					<div class="row">
+						<h3 class="col-12">Card Skill 3:</h3>
+						<div class="col-12">
+							<!-- Icons -->
+							<div class="row">
+								<h4 class="col-12">Icon:</h4>
+								<button type="button" class="col-12 btn btn-secondary sNone" data-sIdx="2">None</button>
+								<button type="button" class="col-12 btn btn-secondary sCustom" data-sIdx="2">Upload a custom Icon</button>
+								<input type="file" accept='image/*' class="sIconC" data-sIdx="2" />
+							</div>
+							<!-- Text -->
+							<div class="row">
+								<h4 class="col-12">Text:</h4>
+								<input type="text" class="form-control" />
+							</div>
+						</div>
+					</div>
+					<!-- Card Levels -->
+					<!-- Card Max Level -->
+					<div class="row">
+						<h3 class="col-12">Card Max Level:</h3>
+						<input type="number" min="1" max="12" class="form-control" name="maxLevel" id="maxLevel" value="1" />
+					</div>
+					<!-- Card Current Level -->
+					<div class="row">
+						<h3 class="col-12">Card Level:</h3>
+						<input type="number" min="1" max="1" class="form-control" name="level" id="level" value="1" />
+					</div>
+				</form>
+			</div>
+		</div>
 		<div id="sources">
 			<img src="resources\cardResources.png" alt="" id="cardSource" width="0" height="0" />
 			<img src="resources\skills0.png" alt="" id="skills0" width="0" height="0" />
